@@ -1,0 +1,84 @@
+.counter-parent{
+  width: 280px;
+  margin: 0 auto;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+button{
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button.reset{
+  background: #c22323;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.counter button {
+  background: #007bff;
+
+}
+
+.heading{
+  background: #ccc;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.heading.ready{
+  background: green;
+  color:white ;
+}
+
+button:active{
+  background: #007b66 !important;
+}
+
+
+.counter-value {
+  font-size: 2rem;
+  animation: change-number 0.5s ease-in-out;
+  border: 2px solid #ccc;
+  transition: 0.5s ease-in-out;
+  padding: 0 15px;
+  margin:  0 15px;
+  color: black;
+  border-radius: 10px;
+}
+
+.counter-value.changing{
+  border: 2px solid green;
+  color: green;
+
+}
+
+.counter-value.animate {
+  animation: change-number 0.5s ease-in-out;
+}
+
+@keyframes change-number {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
